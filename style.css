@@ -1,0 +1,43 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Switched to a modern font for a fresher look */
+    background-color: #ffefd5; /* Light peach background for the whole page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: #ff6347; /* Bright tomato red background for the container */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow for more depth */
+    border: 3px solid #ff4500; /* Dark orange border */
+    animation: glow 2s infinite alternate; /* Adding a glowing effect */
+}
+
+h1 {
+    color: #ffffff; /* White text for contrast */
+    font-size: 3rem; /* Slightly larger font */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Adding a glowing effect for a vibrant, dynamic feel */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+    }
+    to {
+        box-shadow: 0 0 20px #ff4500, 0 0 40px #ff4500, 0 0 60px #ff4500;
+    }
+}
